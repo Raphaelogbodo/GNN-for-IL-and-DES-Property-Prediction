@@ -83,3 +83,19 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 - Transfer learning to Deep Eutectic Solvents shows promising adaptability.
 
 ---
+
+## 🔍 Project Impact
+
+**This project has strengthened my expertise in:**
+
+- Machine Learning for Molecular Systems
+
+- Graph Representation Learning
+
+- Cheminformatics and Data Engineering
+
+- Database Integration and Automation
+
+- Scientific Computing and Reproducible Research
+
+**It also lays the groundwork for applying AI-driven design principles to novel ionic liquid discovery and optimization.**
