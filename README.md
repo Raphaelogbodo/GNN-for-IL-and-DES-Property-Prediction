@@ -43,3 +43,35 @@ This project aims to address that challenge by developing a **data-driven predic
   - Visualize learning curves and prediction accuracy  
 
 ---
+
+## 🧠 Model Architecture
+
+The core architecture uses the **NNConv** layer from PyTorch Geometric to learn edge-conditioned message functions, enabling adaptive feature propagation across molecular graphs.
+
+**Highlights:**
+- Node embeddings represent atom-level features (atomic number, degree, valence, etc.)  
+- Edge embeddings represent bond information (type, conjugation, ring status, etc.)  
+- Global features incorporate molecular-level descriptors (e.g., polarity, volume, density)  
+- Final readout combines local and global embeddings through fully connected layers
+
+---
+
+## 📚 Technologies Used
+
+| Category | Tools/Libraries |
+|-----------|-----------------|
+| **Deep Learning Framework** | PyTorch, PyTorch Geometric |
+| **Cheminformatics** | RDKit, OpenBabel |
+| **Data Handling** | pandas, numpy, scikit-learn |
+| **Visualization** | matplotlib, seaborn |
+| **Database Access** | NIST ILThermo data integration |
+
+---
+
+## 🧮 Datasets
+
+- **Primary Source:** [NIST ILThermo Database](https://ilthermo.boulder.nist.gov/)
+- **Properties Modeled:** e.g., density, viscosity, conductivity, etc.
+- **Data Processing:** includes duplicate removal, missing value imputation, and molecular pairing.
+
+---
