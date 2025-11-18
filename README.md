@@ -63,7 +63,7 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 | **Deep Learning Framework** | PyTorch, PyTorch Geometric |
 | **Cheminformatics** | RDKit, OpenBabel |
 | **Data Handling** | pandas, numpy, scikit-learn, Scipy |
-| **Visualization** | matplotlib, seaborn |
+| **Visualization** | matplotlib, seaborn | plotly
 | **Database Access** | NIST ILThermo data integration |
 
 ---
