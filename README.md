@@ -85,7 +85,7 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 
 - The models demonstrate strong predictive accuracy (high R², low MARE) across multiple datasets.
 
-- Transfer learning to Deep Eutectic Solvents shows promising adaptabilit demonstrating that the model trained on ILs preserved most structure–property information even when moved to a new material class (DESs).
+- Transfer learning to Deep Eutectic Solvents shows promising adaptability demonstrating that the model trained on ILs preserved most structure–property information even when moved to a new material class (DESs).
 
 | Datasets | R2 | RMSE | MAE | MARE | A20 |
 |-----------|-----------------|-----------------|-----------------|-----------------|-----------------|
