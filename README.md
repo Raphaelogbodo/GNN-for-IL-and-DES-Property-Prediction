@@ -40,7 +40,10 @@ This project aims to address that challenge by developing a **data-driven predic
   - Train the IL model
   - Transfer Learning of the IL model to DESs  
   - Evaluate model performance  
-  - Visualize learning curves and prediction accuracy  
+  - Visualize learning curves and prediction accuracy
+
+- **Parameter Settings:**
+  - All the settings used in this work for model architecture, data preprocessing, etc. are provided in the params.yaml file in code folder
 
 ---
 
