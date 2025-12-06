@@ -119,8 +119,8 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 ## Folders and Description
 ``` 
 code/
-  ├── architecture.py
-  ├── prepare_dataset.py
+  ├── architecture.py ## contains the GNN models 
+  ├── prepare_dataset.py ## prepares dataset from ILthermo database and DES density data in data folder
   ├── training.py
   ├── utils.py
   ├── draw_molecules.py
