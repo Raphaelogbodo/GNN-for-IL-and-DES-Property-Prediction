@@ -133,4 +133,44 @@ textfiles                   # contains files for predictions vs target values, l
 scalers                     # contains saved scalers used on each dataset. for a dataset used for prediction, its scaler is prefixed with "predict_"
 logfiles                    # contains logs from training the models
 models                      # contains saved weights for the trained models. They are loaded for predictions after instantiating the corresponding architecture.       
-``` 
+```
+
+## How To
+```
+#  In your Linux machine, do the following
+$ git clone https://github.com/Raphaelogbodo/Message-Passing-GNNs-for-ILs-and-DESs-properties-predictions.git
+$ cd Message-Passing-GNNs-for-ILs-and-DESs-properties-predictions
+
+# create a conda environment 
+$ conda create --name pytorch_gpu --file requirements.txt
+$ conda activate pytorch_gpu
+
+# To prepare the relevant dataset
+$ python3 code/prepare_dataset.py
+
+# To train the model
+$ python3 code/experiment.py
+
+Note: You have to choose the property you want to train with its data in the params.yaml file
+TARGET_FEATURE_NAME : density
+other options are -----> viscosity, conductivity, and refractive_index
+
+# For Transfer learning on DES
+Set in the params.yaml file
+  TARGET_FEATURE_NAME : density
+  TRANSFER : True 
+  ACTION : train
+then run:
+$ python3 code/experiment.py
+  -  Transfer learning is only implemented for density at this time for DES.
+  -  All generated figures or files for transfer learning is prefixed with "transfer_"
+
+# After Training
+  -  Use predict.ipynb notebook to do post training analysis and predicting new datasets of ILs as shown in the notebook.
+
+# I have included example bash scripts for training the model in HPC cluster
+ - run_dens.sh     # density (runs both IL model training and transfer learning on DESs)
+ - run_visc.sh     # viscosity (only ILs)
+ - run_cond.sh     # conductivity (only ILs)
+ - run_refrac.sh   # refractive_index (only ILs)
+```
