@@ -138,7 +138,7 @@ models                      # contains saved weights for the trained models. The
 ## How To
 ```
 #  In your Linux machine, do the following
-$ git clone https://github.com/Raphaelogbodo/Message-Passing-GNNs-for-ILs-and-DESs-properties-predictions.git
+$ git clone https://github.com/Raphaelogbodo/MP-GNNs-for-ILs-and-DESs-Properties-Predictions.git
 $ cd Message-Passing-GNNs-for-ILs-and-DESs-properties-predictions
 
 # create a conda environment 
@@ -182,4 +182,5 @@ $ python3 code/experiment.py
 
 ## Author
 Raphael N. Ogbodo
+
 Connect with me on Linkedin (https://www.linkedin.com/in/raphael-ogbodo-37ab15145/) if you have any question or want to collaborate
