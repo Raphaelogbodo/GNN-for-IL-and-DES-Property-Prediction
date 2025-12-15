@@ -97,9 +97,8 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 | **DESs validation data (transfer learning)** | 0.97 | 14.30 | 10.65 | 0.009 | 1.00 |
 | **DESs Testing data (transfer learning)** | 0.97 | 13.84 | 10.56 | 0.009 | 1.00 |
 ---
----
-Metrics for the other properties can be found in the respective logs in **logfiles** directory
----
+Metrics for the other properties can be found in the respective logs in the **logfiles** directory
+
 
 ## Project Impact
 
