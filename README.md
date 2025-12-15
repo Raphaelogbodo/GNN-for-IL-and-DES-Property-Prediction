@@ -138,8 +138,8 @@ models                      # contains saved weights for the trained models. The
 ## How To
 ```
 #  In your Linux machine, do the following
-$ git clone https://github.com/Raphaelogbodo/MP-GNNs-for-ILs-and-DESs-Properties-Predictions.git
-$ cd Message-Passing-GNNs-for-ILs-and-DESs-properties-predictions
+$ git clone https://github.com/Raphaelogbodo/GNN-for-IL-and-DES-Property-Prediction.git
+$ cd GNN-for-IL-and-DES-Property-Prediction
 
 # create a conda environment 
 $ conda create --name pytorch_gpu --file requirements.txt
