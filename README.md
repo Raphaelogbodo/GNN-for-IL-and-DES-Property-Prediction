@@ -132,8 +132,11 @@ Figures                     # contains generated figures from data processing an
 textfiles                   # contains files for predictions vs target values, loss, R2, etc.
 scalers                     # contains saved scalers used on each dataset. for a dataset used for prediction, its scaler is prefixed with "predict_"
 logfiles                    # contains logs from training the models
-models                      # contains saved weights for the trained models. They are loaded for predictions after instantiating the corresponding architecture.       
+models                      # contains saved weights for the trained models. Because of the size of the pretrained models, they are hosted on huggingface and should be downloaded from the link below and put in **models** folder. They are loaded for predictions after instantiating the corresponding architecture.     
 ```
+## Pretrained Model
+The trained model is hosted on Hugging Face:
+https://huggingface.co/Raphaelogbodo/GNN-IL-DES-models/upload/main
 
 ## How To
 ```
@@ -147,10 +150,6 @@ $ conda activate pytorch_gpu
 
 # To prepare the relevant dataset
 $ python3 code/prepare_dataset.py
-
-## Pretrained Model
-The trained model is hosted on Hugging Face:
-https://huggingface.co/Raphaelogbodo/GNN-IL-DES-models/upload/main
 
 # To train the model
 $ python3 code/experiment.py
