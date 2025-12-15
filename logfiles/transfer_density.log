@@ -1,0 +1,145 @@
+INFO:root:Logging restarted successfully.
+2025-12-08 20:03:47 | INFO | Logging started (transfer_density.log + console)
+2025-12-08 20:03:47 | INFO | Using GPU 0
+2025-12-08 20:03:47 | INFO | Device used by torch: cuda:0
+2025-12-08 20:03:47 | INFO | Version of torch: 2.6.0+cu124
+2025-12-08 20:03:47 | INFO | CUDA used for torch compilation: 12.4
+2025-12-08 20:03:49 | INFO | tensor([0.], device='cuda:0')
+2025-12-08 20:03:55 | INFO | Non-duplicated ILs: 1528
+2025-12-08 20:03:55 | INFO | Cleaning dataset
+2025-12-08 20:03:59 | INFO | dataset['y'].skew() = 0.11044519498774148
+2025-12-08 20:03:59 | INFO | original_dataset_len = 32840
+2025-12-08 20:03:59 | INFO | Removing outliers from dataset
+2025-12-08 20:03:59 | INFO | Dropped 192 outliers
+2025-12-08 20:03:59 | INFO | dataset['y'].skew() = 0.05308398050803517
+2025-12-08 20:03:59 | INFO | len(dataset) / original_dataset_len * 100 = 99.41534713763703
+2025-12-08 20:10:34 | INFO | len(test_list) = 6530, len(smi_for_test) = 6530
+2025-12-08 20:11:34 | INFO | Non-duplicated DESs: 70
+2025-12-08 20:11:34 | INFO | Cleaning dataset
+2025-12-08 20:11:34 | INFO | dataset['y'].skew() = -0.3208571677987341
+2025-12-08 20:11:34 | INFO | original_dataset_len = 1239
+2025-12-08 20:11:34 | INFO | Removing outliers from dataset
+2025-12-08 20:11:34 | INFO | Dropped 4 outliers
+2025-12-08 20:11:34 | INFO | dataset['y'].skew() = -0.39377718236647025
+2025-12-08 20:11:34 | INFO | len(dataset) / original_dataset_len * 100 = 99.6771589991929
+2025-12-08 20:11:51 | INFO | len(test_list) = 247, len(smi_for_test) = 247
+2025-12-08 20:11:54 | INFO | Loading checkpoint: /Users/rnogbodo/ML/raph_GNN/models/NNConv-mean-density-model_weights.pth
+2025-12-08 20:11:54 | INFO | Unfroze last 2 Convolution Layers.
+2025-12-08 20:11:55 | INFO | 
+
+2025-12-08 20:11:55 | INFO | Architecture: NNConv, POOLING_METHOD: mean
+2025-12-08 20:11:58 | INFO | Epoch 1 | Train Loss 0.754 | Train MAE 0.576 | Train R2 -0.12 || Val Loss 0.654 | Val MAE 0.536 | Val R2 0.08
+2025-12-08 20:12:08 | INFO | Epoch 10 | Train Loss 0.341 | Train MAE 0.264 | Train R2 0.76 || Val Loss 0.248 | Val MAE 0.198 | Val R2 0.87
+2025-12-08 20:12:20 | INFO | Epoch 20 | Train Loss 0.287 | Train MAE 0.223 | Train R2 0.84 || Val Loss 0.206 | Val MAE 0.160 | Val R2 0.90
+2025-12-08 20:12:32 | INFO | Epoch 30 | Train Loss 0.244 | Train MAE 0.190 | Train R2 0.88 || Val Loss 0.158 | Val MAE 0.118 | Val R2 0.95
+2025-12-08 20:12:43 | INFO | Epoch 40 | Train Loss 0.247 | Train MAE 0.196 | Train R2 0.87 || Val Loss 0.142 | Val MAE 0.104 | Val R2 0.96
+2025-12-08 20:12:55 | INFO | Epoch 50 | Train Loss 0.198 | Train MAE 0.151 | Train R2 0.92 || Val Loss 0.141 | Val MAE 0.103 | Val R2 0.96
+2025-12-08 20:13:06 | INFO | Epoch 60 | Train Loss 0.215 | Train MAE 0.163 | Train R2 0.87 || Val Loss 0.130 | Val MAE 0.097 | Val R2 0.97
+2025-12-08 20:13:18 | INFO | Epoch 70 | Train Loss 0.209 | Train MAE 0.156 | Train R2 0.90 || Val Loss 0.135 | Val MAE 0.098 | Val R2 0.96
+2025-12-08 20:13:30 | INFO | Epoch 80 | Train Loss 0.182 | Train MAE 0.141 | Train R2 0.94 || Val Loss 0.112 | Val MAE 0.083 | Val R2 0.97
+2025-12-08 20:13:41 | INFO | Epoch 90 | Train Loss 0.180 | Train MAE 0.143 | Train R2 0.93 || Val Loss 0.115 | Val MAE 0.085 | Val R2 0.97
+2025-12-08 20:13:53 | INFO | Epoch 100 | Train Loss 0.173 | Train MAE 0.137 | Train R2 0.94 || Val Loss 0.110 | Val MAE 0.084 | Val R2 0.97
+2025-12-08 20:14:06 | INFO | 
+Final evaluation for Model NNConv-mean
+2025-12-08 20:14:06 | INFO | Train loss 0.106 ± 0.003 | Train MAE 0.081 ± 0.002 | Train R2 0.98 ± 0.00
+2025-12-08 20:14:06 | INFO | Val   loss 0.110 ± 0.002 | Val MAE 0.085 ± 0.001 | Val R2 0.97 ± 0.00
+2025-12-08 20:14:06 | INFO | Test  loss 0.104 ± 0.000 | Test MAE 0.078 ± 0.000 | Test R2 0.98 ± 0.00
+2025-12-08 20:14:10 | INFO | Training complete
+2025-12-08 20:14:32 | INFO | 
+Final evaluation for Model NNConv-mean (test_on_original_data=True)
+2025-12-08 20:14:32 | INFO | Train: RMSE 13.631 ± 0.025 | MAE 10.134 ± 0.022 | R2 0.98 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:14:32 | INFO | Valid: RMSE 13.942 ± 0.021 | MAE 10.593 ± 0.030 | R2 0.97 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:14:32 | INFO | Test : RMSE 12.971 ± 0.031 | MAE 9.808 ± 0.024 | R2 0.98 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:14:34 | INFO | Loading checkpoint: /Users/rnogbodo/ML/raph_GNN/models/NNConv-attention-density-model_weights.pth
+2025-12-08 20:14:34 | INFO | Unfroze last 2 Convolution Layers.
+2025-12-08 20:14:35 | INFO | 
+
+2025-12-08 20:14:35 | INFO | Architecture: NNConv, POOLING_METHOD: attention
+2025-12-08 20:14:36 | INFO | Epoch 1 | Train Loss 0.693 | Train MAE 0.549 | Train R2 0.02 || Val Loss 0.682 | Val MAE 0.562 | Val R2 0.05
+2025-12-08 20:14:47 | INFO | Epoch 10 | Train Loss 0.336 | Train MAE 0.258 | Train R2 0.78 || Val Loss 0.246 | Val MAE 0.189 | Val R2 0.87
+2025-12-08 20:14:59 | INFO | Epoch 20 | Train Loss 0.270 | Train MAE 0.209 | Train R2 0.85 || Val Loss 0.209 | Val MAE 0.158 | Val R2 0.91
+2025-12-08 20:15:10 | INFO | Epoch 30 | Train Loss 0.230 | Train MAE 0.173 | Train R2 0.90 || Val Loss 0.178 | Val MAE 0.129 | Val R2 0.94
+2025-12-08 20:15:22 | INFO | Epoch 40 | Train Loss 0.199 | Train MAE 0.153 | Train R2 0.92 || Val Loss 0.137 | Val MAE 0.098 | Val R2 0.96
+2025-12-08 20:15:34 | INFO | Epoch 50 | Train Loss 0.207 | Train MAE 0.161 | Train R2 0.91 || Val Loss 0.130 | Val MAE 0.099 | Val R2 0.97
+2025-12-08 20:15:46 | INFO | Epoch 60 | Train Loss 0.192 | Train MAE 0.146 | Train R2 0.93 || Val Loss 0.121 | Val MAE 0.089 | Val R2 0.97
+2025-12-08 20:15:58 | INFO | Epoch 70 | Train Loss 0.189 | Train MAE 0.146 | Train R2 0.93 || Val Loss 0.118 | Val MAE 0.089 | Val R2 0.97
+2025-12-08 20:16:09 | INFO | Epoch 80 | Train Loss 0.192 | Train MAE 0.151 | Train R2 0.93 || Val Loss 0.115 | Val MAE 0.087 | Val R2 0.97
+2025-12-08 20:16:21 | INFO | Epoch 90 | Train Loss 0.186 | Train MAE 0.138 | Train R2 0.93 || Val Loss 0.114 | Val MAE 0.083 | Val R2 0.97
+2025-12-08 20:16:33 | INFO | Epoch 100 | Train Loss 0.182 | Train MAE 0.141 | Train R2 0.93 || Val Loss 0.113 | Val MAE 0.084 | Val R2 0.97
+2025-12-08 20:16:47 | INFO | 
+Final evaluation for Model NNConv-attention
+2025-12-08 20:16:47 | INFO | Train loss 0.107 ± 0.002 | Train MAE 0.081 ± 0.001 | Train R2 0.98 ± 0.00
+2025-12-08 20:16:47 | INFO | Val   loss 0.112 ± 0.003 | Val MAE 0.084 ± 0.002 | Val R2 0.97 ± 0.00
+2025-12-08 20:16:47 | INFO | Test  loss 0.113 ± 0.000 | Test MAE 0.085 ± 0.000 | Test R2 0.97 ± 0.00
+2025-12-08 20:16:47 | INFO | Training complete
+2025-12-08 20:17:09 | INFO | 
+Final evaluation for Model NNConv-attention (test_on_original_data=True)
+2025-12-08 20:17:09 | INFO | Train: RMSE 13.869 ± 0.080 | MAE 10.209 ± 0.051 | R2 0.98 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:17:09 | INFO | Valid: RMSE 14.299 ± 0.061 | MAE 10.652 ± 0.068 | R2 0.97 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:17:09 | INFO | Test : RMSE 13.843 ± 0.037 | MAE 10.555 ± 0.046 | R2 0.97 ± 0.00 | MARE 0.009 ± 0.000 | A20 1.00 ± 0.00
+2025-12-08 20:17:10 | INFO | Settings used for this run
+2025-12-08 20:17:10 | INFO | SEED ------------> 42
+2025-12-08 20:17:10 | INFO | ARCH ------------> NNConv
+2025-12-08 20:17:10 | INFO | TARGET_FEATURE_NAME ------------> density
+2025-12-08 20:17:10 | INFO | CHARGE_MODEL ------------> gasteiger
+2025-12-08 20:17:10 | INFO | ADD_HS ------------> True
+2025-12-08 20:17:10 | INFO | NORMALIZE ------------> True
+2025-12-08 20:17:10 | INFO | CHARGE_ENGINE ------------> ob
+2025-12-08 20:17:10 | INFO | REMOVE_HS ------------> False
+2025-12-08 20:17:10 | INFO | USE_RBF ------------> False
+2025-12-08 20:17:10 | INFO | USE_ABF ------------> False
+2025-12-08 20:17:10 | INFO | GLOBAL_FEATURES ------------> True
+2025-12-08 20:17:10 | INFO | NORM_GLOBAL_FEATURE ------------> True
+2025-12-08 20:17:10 | INFO | ADD_IONIC ------------> True
+2025-12-08 20:17:10 | INFO | CONNECT_ALL ------------> True
+2025-12-08 20:17:10 | INFO | CONDITION_NAMES ------------> ['temperature_K', 'pressure_MPa']
+2025-12-08 20:17:10 | INFO | SPLITTER ------------> scaffold
+2025-12-08 20:17:10 | INFO | NUM_GRAPHS_PER_BATCH ------------> 128
+2025-12-08 20:17:10 | INFO | TRAIN_FRACTION ------------> 0.8
+2025-12-08 20:17:10 | INFO | TEST_FRACTION ------------> 0.2
+2025-12-08 20:17:10 | INFO | CONTINUOUS_COLUMNS ------------> ['temperature_K', 'pressure_MPa']
+2025-12-08 20:17:10 | INFO | CATEGORICAL_COLUMNS ------------> None
+2025-12-08 20:17:10 | INFO | STRATIFY_CONT_ONLY ------------> True
+2025-12-08 20:17:10 | INFO | NUM_BINS ------------> 4
+2025-12-08 20:17:10 | INFO | FEATURE_TRANSFORM ------------> True
+2025-12-08 20:17:10 | INFO | FEATURE_TRANSFORM_METHOD ------------> log1p+robust
+2025-12-08 20:17:10 | INFO | SCALE_CONDITIONS ------------> True
+2025-12-08 20:17:10 | INFO | SCALE_CONDITIONS_TYPE ------------> log1p+robust
+2025-12-08 20:17:10 | INFO | REMOVE_OUTLIER ------------> MAD
+2025-12-08 20:17:10 | INFO | CLEAN ------------> True
+2025-12-08 20:17:10 | INFO | CLEANING_FOR_TEST_SET ------------> False
+2025-12-08 20:17:10 | INFO | VERBOSE ------------> True
+2025-12-08 20:17:10 | INFO | TESTSET_FROM_DATASET ------------> True
+2025-12-08 20:17:10 | INFO | CREATE_RDKITMOL_COL ------------> True
+2025-12-08 20:17:10 | INFO | MIN_MAX_SCALE ------------> True
+2025-12-08 20:17:10 | INFO | TEST_ON_ORIGINAL_DATA ------------> True
+2025-12-08 20:17:10 | INFO | TRAIN_MODE ------------> True
+2025-12-08 20:17:10 | INFO | SEARCH_MODE ------------> False
+2025-12-08 20:17:10 | INFO | LR ------------> 0.001
+2025-12-08 20:17:10 | INFO | LOSS_THRESHOLD ------------> 0.001
+2025-12-08 20:17:10 | INFO | EMBEDDING_SIZE ------------> [256, 512, 512, 256]
+2025-12-08 20:17:10 | INFO | LINEAR_SIZE ------------> [256, 128]
+2025-12-08 20:17:10 | INFO | EPOCH ------------> 100
+2025-12-08 20:17:10 | INFO | DEVICE ------------> cuda:0
+2025-12-08 20:17:10 | INFO | POOLING_METHOD ------------> attention
+2025-12-08 20:17:10 | INFO | LOG_EVERY ------------> 10
+2025-12-08 20:17:10 | INFO | ACTION ------------> none
+2025-12-08 20:17:10 | INFO | SAVE_GRAPH_LIST ------------> True
+2025-12-08 20:17:10 | INFO | COMPRESS ------------> True
+2025-12-08 20:17:10 | INFO | USE_SAVED_GRAPH_LIST ------------> False
+2025-12-08 20:17:10 | INFO | PREDICT ------------> False
+2025-12-08 20:17:10 | INFO | WHICH_LIQUID ------------> des
+2025-12-08 20:17:10 | INFO | FINAL_EVAL_DATAFRAME ------------> False
+2025-12-08 20:17:10 | INFO | TRANSFER ------------> True
+2025-12-08 20:17:10 | INFO | FINE_TUNE ------------> True
+2025-12-08 20:17:10 | INFO | N_LAYERS_FINETUNE ------------> 2
+2025-12-08 20:17:10 | INFO | TRANSFER_LINEAR_SIZE ------------> [256, 128]
+2025-12-08 20:17:10 | INFO | FREEZE ------------> True
+2025-12-08 20:17:10 | INFO | MODE ------------> train
+2025-12-08 20:17:10 | INFO | LR_HEAD ------------> 0.001
+2025-12-08 20:17:10 | INFO | LR_ENCODER ------------> 0.0001
+2025-12-08 20:17:10 | INFO | INPUT_DIM ------------> 11
+2025-12-08 20:17:10 | INFO | EDGE_DIM ------------> 8
+2025-12-08 20:17:10 | INFO | COND_DIM ------------> 12
+2025-12-08 20:17:10 | INFO | 
+

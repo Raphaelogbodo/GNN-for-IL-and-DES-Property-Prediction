@@ -1,0 +1,226 @@
+INFO:root:Logging restarted successfully.
+2025-12-12 16:18:32 | INFO | Logging started (refractive_index.log + console)
+2025-12-12 16:18:32 | INFO | Using GPU 0
+2025-12-12 16:18:32 | INFO | Device used by torch: cuda:0
+2025-12-12 16:18:32 | INFO | Version of torch: 2.6.0+cu124
+2025-12-12 16:18:32 | INFO | CUDA used for torch compilation: 12.4
+2025-12-12 16:18:34 | INFO | tensor([0.], device='cuda:0')
+2025-12-12 16:18:37 | INFO | Non-duplicated ILs: 588
+2025-12-12 16:18:37 | INFO | Cleaning dataset
+2025-12-12 16:18:38 | INFO | dataset['y'].skew() = 0.44237210507049185
+2025-12-12 16:18:38 | INFO | original_dataset_len = 7611
+2025-12-12 16:18:38 | INFO | Removing outliers from dataset
+2025-12-12 16:18:38 | INFO | Dropped 175 outliers
+2025-12-12 16:18:38 | INFO | dataset['y'].skew() = 0.3020081002933341
+2025-12-12 16:18:38 | INFO | len(dataset) / original_dataset_len * 100 = 97.70069636053081
+2025-12-12 16:20:06 | INFO | len(test_list) = 1488, len(smi_for_test) = 1488
+2025-12-12 16:20:20 | INFO | 
+
+2025-12-12 16:20:20 | INFO | Architecture: NNConv, POOLING_METHOD: mean
+2025-12-12 16:20:36 | INFO | Epoch 1 | Train Loss 0.468 | Train MAE 0.372 | Train R2 0.33 || Val Loss 0.230 | Val MAE 0.163 | Val R2 0.85
+2025-12-12 16:21:40 | INFO | Epoch 10 | Train Loss 0.121 | Train MAE 0.091 | Train R2 0.96 || Val Loss 0.083 | Val MAE 0.054 | Val R2 0.98
+2025-12-12 16:22:51 | INFO | Epoch 20 | Train Loss 0.115 | Train MAE 0.087 | Train R2 0.96 || Val Loss 0.090 | Val MAE 0.060 | Val R2 0.97
+2025-12-12 16:24:02 | INFO | Epoch 30 | Train Loss 0.094 | Train MAE 0.070 | Train R2 0.98 || Val Loss 0.069 | Val MAE 0.039 | Val R2 0.98
+2025-12-12 16:25:14 | INFO | Epoch 40 | Train Loss 0.105 | Train MAE 0.081 | Train R2 0.97 || Val Loss 0.088 | Val MAE 0.062 | Val R2 0.98
+2025-12-12 16:26:25 | INFO | Epoch 50 | Train Loss 0.091 | Train MAE 0.068 | Train R2 0.98 || Val Loss 0.070 | Val MAE 0.043 | Val R2 0.98
+2025-12-12 16:27:36 | INFO | Epoch 60 | Train Loss 0.085 | Train MAE 0.062 | Train R2 0.98 || Val Loss 0.067 | Val MAE 0.039 | Val R2 0.99
+2025-12-12 16:28:47 | INFO | Epoch 70 | Train Loss 0.081 | Train MAE 0.059 | Train R2 0.98 || Val Loss 0.071 | Val MAE 0.037 | Val R2 0.98
+2025-12-12 16:29:59 | INFO | Epoch 80 | Train Loss 0.094 | Train MAE 0.070 | Train R2 0.98 || Val Loss 0.079 | Val MAE 0.049 | Val R2 0.98
+2025-12-12 16:31:10 | INFO | Epoch 90 | Train Loss 0.088 | Train MAE 0.065 | Train R2 0.98 || Val Loss 0.071 | Val MAE 0.044 | Val R2 0.98
+2025-12-12 16:32:21 | INFO | Epoch 100 | Train Loss 0.086 | Train MAE 0.064 | Train R2 0.98 || Val Loss 0.071 | Val MAE 0.039 | Val R2 0.98
+2025-12-12 16:32:55 | INFO | 
+Final evaluation for Model NNConv-mean
+2025-12-12 16:32:55 | INFO | Train loss 0.050 ± 0.001 | Train MAE 0.034 ± 0.001 | Train R2 0.99 ± 0.00
+2025-12-12 16:32:55 | INFO | Val   loss 0.068 ± 0.003 | Val MAE 0.038 ± 0.001 | Val R2 0.98 ± 0.00
+2025-12-12 16:32:55 | INFO | Test  loss 0.070 ± 0.001 | Test MAE 0.039 ± 0.001 | Test R2 0.99 ± 0.00
+2025-12-12 16:32:58 | INFO | Training complete
+2025-12-12 16:35:07 | INFO | 
+Final evaluation for Model NNConv-mean (test_on_original_data=True)
+2025-12-12 16:35:07 | INFO | Train: RMSE 0.003 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.99 ± 0.00 | MARE 0.001 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:35:07 | INFO | Valid: RMSE 0.005 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.98 ± 0.00 | MARE 0.002 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:35:07 | INFO | Test : RMSE 0.004 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.99 ± 0.00 | MARE 0.002 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:35:07 | INFO | NNConvModel(
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (dropout2): Dropout(p=0.3, inplace=False)
+  (conv_layers): ModuleList(
+    (0): NNConv(11, 256, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=2816, bias=True)
+    ))
+    (1): NNConv(256, 512, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=131072, bias=True)
+    ))
+    (2): NNConv(512, 512, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=262144, bias=True)
+    ))
+    (3): NNConv(512, 256, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=131072, bias=True)
+    ))
+  )
+  (norm_layers): ModuleList(
+    (0): GraphNorm(256)
+    (1-2): 2 x GraphNorm(512)
+    (3): GraphNorm(256)
+  )
+  (linears): ModuleList(
+    (0): Linear(in_features=268, out_features=256, bias=True)
+    (1): Linear(in_features=256, out_features=128, bias=True)
+  )
+  (linear_norms): ModuleList(
+    (0): LayerNorm(256, affine=True, mode=graph)
+    (1): LayerNorm(128, affine=True, mode=graph)
+  )
+  (out): Linear(in_features=128, out_features=1, bias=True)
+)
+2025-12-12 16:35:07 | INFO | 
+
+2025-12-12 16:35:08 | INFO | 
+
+2025-12-12 16:35:08 | INFO | Architecture: NNConv, POOLING_METHOD: attention
+2025-12-12 16:35:16 | INFO | Epoch 1 | Train Loss 0.403 | Train MAE 0.318 | Train R2 0.45 || Val Loss 0.253 | Val MAE 0.207 | Val R2 0.82
+2025-12-12 16:36:20 | INFO | Epoch 10 | Train Loss 0.112 | Train MAE 0.084 | Train R2 0.97 || Val Loss 0.081 | Val MAE 0.053 | Val R2 0.98
+2025-12-12 16:37:31 | INFO | Epoch 20 | Train Loss 0.104 | Train MAE 0.077 | Train R2 0.97 || Val Loss 0.085 | Val MAE 0.059 | Val R2 0.98
+2025-12-12 16:38:43 | INFO | Epoch 30 | Train Loss 0.090 | Train MAE 0.067 | Train R2 0.98 || Val Loss 0.059 | Val MAE 0.037 | Val R2 0.99
+2025-12-12 16:39:54 | INFO | Epoch 40 | Train Loss 0.101 | Train MAE 0.075 | Train R2 0.97 || Val Loss 0.082 | Val MAE 0.055 | Val R2 0.98
+2025-12-12 16:41:05 | INFO | Epoch 50 | Train Loss 0.089 | Train MAE 0.067 | Train R2 0.98 || Val Loss 0.063 | Val MAE 0.037 | Val R2 0.99
+2025-12-12 16:42:17 | INFO | Epoch 60 | Train Loss 0.082 | Train MAE 0.060 | Train R2 0.98 || Val Loss 0.058 | Val MAE 0.033 | Val R2 0.99
+2025-12-12 16:43:28 | INFO | Epoch 70 | Train Loss 0.078 | Train MAE 0.057 | Train R2 0.98 || Val Loss 0.056 | Val MAE 0.033 | Val R2 0.99
+2025-12-12 16:44:40 | INFO | Epoch 80 | Train Loss 0.094 | Train MAE 0.069 | Train R2 0.98 || Val Loss 0.077 | Val MAE 0.054 | Val R2 0.98
+2025-12-12 16:45:51 | INFO | Epoch 90 | Train Loss 0.085 | Train MAE 0.064 | Train R2 0.98 || Val Loss 0.070 | Val MAE 0.049 | Val R2 0.98
+2025-12-12 16:47:02 | INFO | Epoch 100 | Train Loss 0.080 | Train MAE 0.059 | Train R2 0.98 || Val Loss 0.064 | Val MAE 0.037 | Val R2 0.99
+2025-12-12 16:47:36 | INFO | 
+Final evaluation for Model NNConv-attention
+2025-12-12 16:47:36 | INFO | Train loss 0.049 ± 0.001 | Train MAE 0.033 ± 0.001 | Train R2 0.99 ± 0.00
+2025-12-12 16:47:36 | INFO | Val   loss 0.063 ± 0.002 | Val MAE 0.036 ± 0.001 | Val R2 0.99 ± 0.00
+2025-12-12 16:47:36 | INFO | Test  loss 0.065 ± 0.001 | Test MAE 0.037 ± 0.001 | Test R2 0.99 ± 0.00
+2025-12-12 16:47:37 | INFO | Training complete
+2025-12-12 16:49:46 | INFO | 
+Final evaluation for Model NNConv-attention (test_on_original_data=True)
+2025-12-12 16:49:46 | INFO | Train: RMSE 0.003 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.99 ± 0.00 | MARE 0.001 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:49:46 | INFO | Valid: RMSE 0.004 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.99 ± 0.00 | MARE 0.002 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:49:46 | INFO | Test : RMSE 0.004 ± 0.000 | MAE 0.002 ± 0.000 | R2 0.99 ± 0.00 | MARE 0.002 ± 0.000 | A20 1.00 ± 0.00
+2025-12-12 16:49:46 | INFO | NNConvModel(
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (dropout2): Dropout(p=0.3, inplace=False)
+  (gate_nn): Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=1, bias=True)
+  )
+  (att_pool): AttentionalAggregation(gate_nn=Sequential(
+    (0): Linear(in_features=256, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=1, bias=True)
+  ), nn=None)
+  (conv_layers): ModuleList(
+    (0): NNConv(11, 256, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=2816, bias=True)
+    ))
+    (1): NNConv(256, 512, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=131072, bias=True)
+    ))
+    (2): NNConv(512, 512, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=128, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=128, out_features=262144, bias=True)
+    ))
+    (3): NNConv(512, 256, aggr=mean, nn=Sequential(
+      (0): Linear(in_features=8, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=131072, bias=True)
+    ))
+  )
+  (norm_layers): ModuleList(
+    (0): GraphNorm(256)
+    (1-2): 2 x GraphNorm(512)
+    (3): GraphNorm(256)
+  )
+  (linears): ModuleList(
+    (0): Linear(in_features=268, out_features=256, bias=True)
+    (1): Linear(in_features=256, out_features=128, bias=True)
+  )
+  (linear_norms): ModuleList(
+    (0): LayerNorm(256, affine=True, mode=graph)
+    (1): LayerNorm(128, affine=True, mode=graph)
+  )
+  (out): Linear(in_features=128, out_features=1, bias=True)
+)
+2025-12-12 16:49:46 | INFO | 
+
+2025-12-12 16:49:47 | INFO | Settings used for this run
+2025-12-12 16:49:47 | INFO | SEED ------------> 42
+2025-12-12 16:49:47 | INFO | ARCH ------------> NNConv
+2025-12-12 16:49:47 | INFO | TARGET_FEATURE_NAME ------------> refractive_index
+2025-12-12 16:49:47 | INFO | CHARGE_MODEL ------------> gasteiger
+2025-12-12 16:49:47 | INFO | ADD_HS ------------> True
+2025-12-12 16:49:47 | INFO | NORMALIZE ------------> True
+2025-12-12 16:49:47 | INFO | CHARGE_ENGINE ------------> ob
+2025-12-12 16:49:47 | INFO | REMOVE_HS ------------> False
+2025-12-12 16:49:47 | INFO | USE_RBF ------------> False
+2025-12-12 16:49:47 | INFO | USE_ABF ------------> False
+2025-12-12 16:49:47 | INFO | GLOBAL_FEATURES ------------> True
+2025-12-12 16:49:47 | INFO | NORM_GLOBAL_FEATURE ------------> True
+2025-12-12 16:49:47 | INFO | ADD_IONIC ------------> True
+2025-12-12 16:49:47 | INFO | CONNECT_ALL ------------> True
+2025-12-12 16:49:47 | INFO | CONDITION_NAMES ------------> ['temperature_K', 'wavelength_nm']
+2025-12-12 16:49:47 | INFO | SPLITTER ------------> scaffold
+2025-12-12 16:49:47 | INFO | NUM_GRAPHS_PER_BATCH ------------> 128
+2025-12-12 16:49:47 | INFO | TRAIN_FRACTION ------------> 0.8
+2025-12-12 16:49:47 | INFO | TEST_FRACTION ------------> 0.2
+2025-12-12 16:49:47 | INFO | CONTINUOUS_COLUMNS ------------> ['temperature_K', 'pressure_MPa']
+2025-12-12 16:49:47 | INFO | CATEGORICAL_COLUMNS ------------> None
+2025-12-12 16:49:47 | INFO | STRATIFY_CONT_ONLY ------------> True
+2025-12-12 16:49:47 | INFO | NUM_BINS ------------> 4
+2025-12-12 16:49:47 | INFO | FEATURE_TRANSFORM ------------> True
+2025-12-12 16:49:47 | INFO | FEATURE_TRANSFORM_METHOD ------------> log1p+robust
+2025-12-12 16:49:47 | INFO | SCALE_CONDITIONS ------------> True
+2025-12-12 16:49:47 | INFO | SCALE_CONDITIONS_TYPE ------------> log1p+robust
+2025-12-12 16:49:47 | INFO | REMOVE_OUTLIER ------------> MAD
+2025-12-12 16:49:47 | INFO | CLEAN ------------> True
+2025-12-12 16:49:47 | INFO | CLEANING_FOR_TEST_SET ------------> False
+2025-12-12 16:49:47 | INFO | VERBOSE ------------> True
+2025-12-12 16:49:47 | INFO | TESTSET_FROM_DATASET ------------> True
+2025-12-12 16:49:47 | INFO | CREATE_RDKITMOL_COL ------------> True
+2025-12-12 16:49:47 | INFO | MIN_MAX_SCALE ------------> True
+2025-12-12 16:49:47 | INFO | TEST_ON_ORIGINAL_DATA ------------> True
+2025-12-12 16:49:47 | INFO | TRAIN_MODE ------------> True
+2025-12-12 16:49:47 | INFO | SEARCH_MODE ------------> False
+2025-12-12 16:49:47 | INFO | LR ------------> 0.001
+2025-12-12 16:49:47 | INFO | LOSS_THRESHOLD ------------> 0.0001
+2025-12-12 16:49:47 | INFO | EMBEDDING_SIZE ------------> [256, 512, 512, 256]
+2025-12-12 16:49:47 | INFO | LINEAR_SIZE ------------> [256, 128]
+2025-12-12 16:49:47 | INFO | EPOCH ------------> 100
+2025-12-12 16:49:47 | INFO | DEVICE ------------> cuda:0
+2025-12-12 16:49:47 | INFO | POOLING_METHOD ------------> attention
+2025-12-12 16:49:47 | INFO | LOG_EVERY ------------> 10
+2025-12-12 16:49:47 | INFO | ACTION ------------> train
+2025-12-12 16:49:47 | INFO | SAVE_GRAPH_LIST ------------> True
+2025-12-12 16:49:47 | INFO | COMPRESS ------------> True
+2025-12-12 16:49:47 | INFO | USE_SAVED_GRAPH_LIST ------------> False
+2025-12-12 16:49:47 | INFO | PREDICT ------------> False
+2025-12-12 16:49:47 | INFO | WHICH_LIQUID ------------> il
+2025-12-12 16:49:47 | INFO | FINAL_EVAL_DATAFRAME ------------> False
+2025-12-12 16:49:47 | INFO | TRANSFER ------------> False
+2025-12-12 16:49:47 | INFO | FINE_TUNE ------------> True
+2025-12-12 16:49:47 | INFO | N_LAYERS_FINETUNE ------------> 2
+2025-12-12 16:49:47 | INFO | TRANSFER_LINEAR_SIZE ------------> [256, 128]
+2025-12-12 16:49:47 | INFO | FREEZE ------------> True
+2025-12-12 16:49:47 | INFO | MODE ------------> train
+2025-12-12 16:49:47 | INFO | LR_HEAD ------------> 0.001
+2025-12-12 16:49:47 | INFO | LR_ENCODER ------------> 0.0001
+2025-12-12 16:49:47 | INFO | INPUT_DIM ------------> 11
+2025-12-12 16:49:47 | INFO | EDGE_DIM ------------> 8
+2025-12-12 16:49:47 | INFO | COND_DIM ------------> 12
+2025-12-12 16:49:47 | INFO | 
+

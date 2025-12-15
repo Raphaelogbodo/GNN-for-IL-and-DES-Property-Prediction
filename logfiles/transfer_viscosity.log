@@ -1,0 +1,16 @@
+INFO:root:Logging restarted successfully.
+2025-12-06 17:30:06 | INFO | Logging started (transfer_viscosity.log + console)
+2025-12-06 17:30:06 | INFO | Using GPU 0
+2025-12-06 17:30:06 | INFO | Device used by torch: cuda:0
+2025-12-06 17:30:06 | INFO | Version of torch: 2.6.0+cu124
+2025-12-06 17:30:06 | INFO | CUDA used for torch compilation: 12.4
+2025-12-06 17:30:07 | INFO | tensor([0.], device='cuda:0')
+2025-12-06 17:30:10 | INFO | Non-duplicated ILs: 1171
+2025-12-06 17:30:10 | INFO | Cleaning dataset
+2025-12-06 17:30:12 | INFO | dataset['y'].skew() = 1.7260146904972686
+2025-12-06 17:30:12 | INFO | original_dataset_len = 18592
+2025-12-06 17:30:12 | INFO | Removing outliers from dataset
+2025-12-06 17:30:12 | INFO | Dropped 3239 outliers
+2025-12-06 17:30:12 | INFO | dataset['y'].skew() = 0.8975038271174285
+2025-12-06 17:30:12 | INFO | len(dataset) / original_dataset_len * 100 = 82.57852839931154
+2025-12-06 17:33:08 | INFO | len(test_list) = 3071, len(smi_for_test) = 3071
