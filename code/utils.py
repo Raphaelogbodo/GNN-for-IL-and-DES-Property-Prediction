@@ -1446,7 +1446,6 @@ def prepare_data_loaders_numbered(params, dataset, smi_for_test, data):
 
     return loader, val_loader, test_loader, train_list, valid_list, test_list
 
-from torch.amp import autocast, GradScaler
 def prepare_training_baseline(params, device, optimizer, model, loss_fn, loss_r2, loss_mae):
     """
     Returns train() and evaluate() functions tied to the provided model and optimizer.
