@@ -136,7 +136,7 @@ models                      # contains saved weights for the trained models. Bec
 ```
 ## Pretrained Model
 The trained model is hosted on Hugging Face:
-https://huggingface.co/Raphaelogbodo/GNN-IL-DES-models/upload/main
+https://huggingface.co/Raphaelogbodo/GNN-IL-DES-models
 
 ## How To
 ```
