@@ -83,21 +83,22 @@ The core architecture uses the **NNConv** layer from PyTorch Geometric to learn 
 
 ## Results and Insights
 
-- The models demonstrate strong predictive accuracy (high R², low MARE) across multiple datasets at just 20 Epochs of training.
+- The models demonstrate strong and incredible predictive accuracy (high R², low MARE and RMSE) across multiple datasets at just 100 Epochs of training.
 
 - Transfer learning to Deep Eutectic Solvents shows promising adaptability demonstrating that the model trained on ILs preserved most structure–property information even when moved to a new material class (DESs).
 
 | Datasets | R2 | RMSE | MAE | MARE | A20 |
 |-----------|-----------------|-----------------|-----------------|-----------------|-----------------|
-| **Primary ILs training data** | 0.99 | 13.16 | 8.02 | 0.007 | 1.00 |
-| **Primary ILs validation data** | 0.99 | 13.81 | 8.10 | 0.007 | 1.00 |
-| **Primary ILs Testing data** | 0.99 | 14.82 | 8.31 | 0.007 | 1.00 |
-| **Additional ILs Testing data** | 0.96 | 31.31 | 18.9 | 0.015 | 1.00 |
-| **DESs training data (transfer learning)** | 0.94 | 22.08 | 16.76 | 0.015 | 1.00 |
-| **DESs validation data (transfer learning)** | 0.94 | 20.67 | 16.69 | 0.015 | 1.00 |
-| **DESs Testing data (transfer learning)** | 0.93 | 23.51 | 17.17 | 0.015 | 1.00 |
-
-
+| **Primary ILs training data** | 1.00 | 10.02 | 6.41 | 0.005 | 1.00 |
+| **Primary ILs validation data** | 1.00 | 11.33 | 6.76 | 0.005 | 1.00 |
+| **Primary ILs Testing data** | 0.99 | 12.59 | 7.04 | 0.006 | 1.00 |
+| **Additional ILs Testing data** | 0.97 | 29.27 | 16.60 | 0.014 | 1.00 |
+| **DESs training data (transfer learning)** | 0.98 | 13.87 | 10.21 | 0.009 | 1.00 |
+| **DESs validation data (transfer learning)** | 0.97 | 14.30 | 10.65 | 0.009 | 1.00 |
+| **DESs Testing data (transfer learning)** | 0.97 | 13.84 | 10.56 | 0.009 | 1.00 |
+---
+---
+Metrics for the other properties can be found in the respective logs in **logfiles** directory
 ---
 
 ## Project Impact
