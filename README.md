@@ -6,8 +6,8 @@ A Deep Learning Framework for Predicting Physicochemical Properties of Ionic Liq
 This project focuses on developing a **Graph Neural Network (GNN)** model based on the **Neural Network Convolution (NNConv)** architecture for the **prediction of key physicochemical properties of Ionic Liquids (ILs)**.  
 
 It represents an intersection of **computational chemistry**, **cheminformatics**, and **deep learning**, leveraging molecular graph representations and message passing to capture intricate structural and electronic interactions within IL systems.
-
 ---
+![Overall Model](Figures/GNN.png)
 
 ## Motivation
 
