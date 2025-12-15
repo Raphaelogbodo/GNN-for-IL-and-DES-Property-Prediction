@@ -148,6 +148,10 @@ $ conda activate pytorch_gpu
 # To prepare the relevant dataset
 $ python3 code/prepare_dataset.py
 
+## Pretrained Model
+The trained model is hosted on Hugging Face:
+https://huggingface.co/Raphaelogbodo/GNN-IL-DES-models/upload/main
+
 # To train the model
 $ python3 code/experiment.py
 
